@@ -1,7 +1,7 @@
-## Original Source
+## About the template
 
-https://github.com/timlrx/tailwind-nextjs-starter-blog
+Forked from: https://github.com/timlrx/tailwind-nextjs-starter-blog
 
 ## Licence
 
-[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/main/LICENSE) © [Timothy Lin](https://www.timlrx.com)
+[MIT](https://github.com/vishnuMohanan01/blog-site/blob/main/LICENSE) © Vishnu Mohanan
