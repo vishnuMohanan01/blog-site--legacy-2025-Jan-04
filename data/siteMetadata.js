@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Vishnu Mohanan Writes',
+  title: 'thevishnumohanan',
   author: 'Vishnu Mohanan',
   headerTitle: 'thevishnumohanan',
   description: 'Where I share my thoughts on the universe and everything in it.',
