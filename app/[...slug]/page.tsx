@@ -65,7 +65,7 @@ export async function generateMetadata({
       images: ogImages,
       authors: authors.length > 0 ? authors : [siteMetadata.author],
     },
-    x: {
+    twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.summary,
