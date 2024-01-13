@@ -13,7 +13,6 @@ const siteMetadata = {
   github: 'https://github.com/vishnuMohanan01',
   twitter: 'https://twitter.com/thevishnuverse',
   linkedin: 'https://www.linkedin.com/in/vishnu-mohanan/',
-  instagram: 'https://www.instagram.com/thevishnumohanan/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
