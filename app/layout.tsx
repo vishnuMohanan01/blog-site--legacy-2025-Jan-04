@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  twitter: {
+  x: {
     title: siteMetadata.title,
     card: 'summary_large_image',
     images: [siteMetadata.socialBanner],

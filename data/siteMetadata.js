@@ -8,10 +8,10 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://thevishnumohanan.vercel.app',
   siteRepo: 'https://github.com/vishnuMohanan01/blog-site',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/x-card.png',
   email: 'iamvm.logs@gmail.com',
   github: 'https://github.com/vishnuMohanan01',
-  twitter: 'https://twitter.com/thevishnuverse',
+  x: 'https://x.com/themajesticvish',
   linkedin: 'https://www.linkedin.com/in/vishnu-mohanan/',
   locale: 'en-US',
   analytics: {
