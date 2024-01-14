@@ -1,3 +1,7 @@
+## Read my thoughts
+
+https://thevishnumohanan.world/
+
 ## About the template
 
 Forked from: https://github.com/timlrx/tailwind-nextjs-starter-blog
