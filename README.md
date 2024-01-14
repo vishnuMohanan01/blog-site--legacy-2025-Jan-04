@@ -4,7 +4,7 @@ https://thevishnumohanan.world/
 
 ## About the template
 
-Forked from: https://github.com/timlrx/tailwind-nextjs-starter-blog
+Forked and Modified: https://github.com/timlrx/tailwind-nextjs-starter-blog
 
 ## Licence
 
