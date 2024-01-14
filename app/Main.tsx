@@ -26,7 +26,10 @@ export default function Home({ posts }) {
                       <div className="space-y-3">
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link href={`/${slug}`} className="text-gray-900 dark:text-gray-100 hover:underline underline-offset-4">
+                            <Link
+                              href={`/${slug}`}
+                              className="text-gray-900 underline-offset-4 hover:underline dark:text-gray-100"
+                            >
                               {title}
                             </Link>
                           </h2>
