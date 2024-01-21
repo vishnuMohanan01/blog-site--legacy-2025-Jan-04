@@ -3,10 +3,10 @@ const siteMetadata = {
   title: 'thevishnumohanan',
   author: 'Vishnu Mohanan',
   headerTitle: 'thevishnumohanan',
-  description: 'Where I share my thoughts on the universe and everything in it.',
+  description: "Vishnu Mohanan's blogs",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://thevishnumohanan.vercel.app',
+  siteUrl: 'https://thevishnumohanan.world',
   siteRepo: 'https://github.com/vishnuMohanan01/blog-site',
   socialBanner: '/static/images/x-card.png',
   email: 'iamvm.logs@gmail.com',
