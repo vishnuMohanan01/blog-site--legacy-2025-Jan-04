@@ -7,7 +7,7 @@ summary: Briefly outlines the various stages of a search engine's process in pre
 
 A **search engine** is a magical tool that helps us fetch pages from the vast expanse of the internet with a simple query (in human language!). Ever wondered how they know about all these pages and what they contain ?
 
-A typical search engine has to go through 3 different phases before it can produce results for our query before us:
+A typical search engine has to go through 3 different phases before it can produce results for our query:
 
 1. Crawling.
 2. Indexing.
@@ -18,7 +18,7 @@ A lot of [jargons](https://www.google.com/search?q=jargons+meaning) ? Let's look
 ## Crawling
 
 Crawling or web crawling is the process by which a program within the search engine looks for new web pages through out the internet. Websites will not appear on
-search engine results as soon as they got hosted somewhere in the internet. For this, we should let search engines know of the site's existence in some address (domain).
+search engine results as soon as they got hosted on the internet. For this, we should let search engines know of the site's existence in some address (domain).
 This rises a question:
 
 *How will I let the search engine know of this new website which I just got hosted ?*
@@ -29,7 +29,7 @@ There are quite a few ways for this. Here are a few:
 you posting the URL in a social media post. The crawler recognizes this URL and crawls through it later.
 - You can submit your website domain for indexing. For example, in order to get indexed in [Google](https://www.google.com/), you can submit your website at [Google's search console](https://search.google.com/search-console).
 Here you can submit your domain, verify the ownership of the domain and request google to index your page. If you do this, google will crawl through your website and indexes the site's pages if it's applicable. Worry not! We have't discussed indexing yet.
-- You can add a [sitemap file](https://www.sitemaps.org/) to your website, with a list of all the pages in the site. This will help crawlers understand the structure of your site and not miss a page while crawling.
+- You can add a [sitemap file](https://www.sitemaps.org/) to your website, with a list of URLs of all the pages in the site. This will help crawlers understand the structure of your site and not miss a page while crawling.
 
 After the crawler acquires a URL, it will add it to a **URL Frontier**. Which is a queue that stores URLs yet to be crawled. It sends HTTP requests to URLs in this queue one by one and the response received (an HTML response) is parsed to extract information out of it.
 Note that, if the response received contain links (URLs) to other sites, they will go to the URL Frontier and will be crawled later. This is a [recursive](https://www.google.com/search?q=recursive+meaning) process.
@@ -45,27 +45,27 @@ The answer is **Seed URLs**. A set of URLs viz Seed URLs will be fed to the craw
 
 In this phase, the search engine analyzes texts, images and other metadata from the collected pages and stores them in an **index** (a database).
 
-The text content in the HTML document may be [tokenized](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization), converted into a [normalized](https://en.wikipedia.org/wiki/Text_normalization) form and ran through a system which learns what the content is about. The processed output is then stored in a special data structure which facilitates searching for similar kind of web pages easy.
+The text content in the HTML document may be [tokenized](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization), converted into a [normalized](https://en.wikipedia.org/wiki/Text_normalization) form and ran through a system which learns what the content is about. The processed output is then stored in a special data structure which makes searching for similar kind of web pages easy.
 
-Along with this, information as the site's language, business location, last modified data are also stored. This makes it easy to show search results specific to the user. For example, when user searches for "restaurants" the search engine can show restaurants which are closer to the user rather than those that are half way across the world.
+Along with this, information for instance the site's language, business location, last modified date are also stored. This makes it easy to show search results specific to the user. For example, when user searches for "restaurants" the search engine can show restaurants which are closer to the user rather than those that are half way across the world.
 
 ## Serving search results
 
-This phase is pretty straight forward. When a user enters a search query, the search engine responds with a list of URLs and may be some additional information like a webpage summary and last updated date of all the web pages most relevant to the user's query.
+This phase is pretty straight forward. When a user enters a search query, the search engine responds with a list of URLs and may be some additional information like a webpage summary and last modified date of all the web pages most relevant to the user's query.
 The results are ordered based on the ranking assigned by the search engine to each site.
 
 Question: *So, what determines the rank of a website ?*
 
 Ranking is determined by a really complex algorithm that considers a number of factors.
-These factors typically includes, relevance of the site's content to the query, quality of the content, authority of the site, last updated date and more.
-A higher rank is always desired for the higher the rank at more top the site will appear in the [SERP (Search Engine Results Page)](https://en.wikipedia.org/wiki/Search_engine_results_page) and more the traffic expected.
+These factors typically includes, relevance of the site's content to the query, quality of the content, authority of the site, last modified date and more.
+A higher rank is always desired for the higher the rank, at more top the site will appear in the [SERP (Search Engine Results Page)](https://en.wikipedia.org/wiki/Search_engine_results_page) and more the traffic expected.
 
 Search results might not be the same for all users. It may vary user to user based on the language of query, location, device type and even how they phrased the query.
 
 How they word their query is an important factor here. That is how the users can contribute to the produced results.
 
 Consider a user searching for information about healthy breakfast recipes. John might type, "nutritious breakfasts", while Oliver might phrase it as, "easy and healthy morning meals".
-Despite seeking the same information, the search engine, recognizing the subtle differences in their queries, might present slightly different results. John might see recipes emphasizing "nutrition", while Oliver could get results focusing "simplicity". This showcases how the [nuances](https://www.google.com/search?q=nuance+meaning) in how users phrase their queries contribute to their search experiences.
-In fact it can be considered a skill of it's own. Not everyone is a good googler ! Are you a good googler ?
+Despite seeking the same information, the search engine, recognizing the little differences in their queries, might present slightly different results. John might see recipes emphasizing "nutrition", while Oliver could get results focusing "simplicity". This showcases how the [nuances](https://www.google.com/search?q=nuance+meaning) in how users phrase their queries contribute to their search experiences.
+In fact it can be considered a skill of it's own. Not everyone is a good googler! Are you a good googler ?
 
-May your website rank higher !
+May your website rank higher!
