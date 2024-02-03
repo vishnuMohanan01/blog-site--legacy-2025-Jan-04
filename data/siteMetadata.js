@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'thevishnumohanan',
+  title: 'Blogs by Vishnu Mohanan',
   author: 'Vishnu Mohanan',
   headerTitle: 'thevishnumohanan',
-  description: "Vishnu Mohanan's blogs",
+  description: 'Blogs by Vishnu Mohanan',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://thevishnumohanan.world',
