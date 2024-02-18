@@ -1,0 +1,57 @@
+---
+title: How to make a textarea autogrow ?
+date: '2024-02-18'
+draft: true
+summary: Explains how to create a text area that grows as you add more lines.
+---
+
+Making textareas autogrow as user adds more lines to the field is definitely something you can do as developer who cares.
+Let's see a way to  achieve this.
+
+Suppose you have a textarea like this:
+
+```
+<form>
+  <div style="display: flex;flex-direction: column;width: 25%;">
+    <label for="fieldToGrow">Content:</label>
+    <textarea id="fieldToGrow" name="content" style="line-height: 1.6;padding: 6px;"></textarea>
+  </div>
+</form>
+```
+
+By default the user experience will be really jarring!
+
+![Textarea that doesn't grow](/static/images/non-growing-textarea.gif)
+
+A solution for this is to make the textarea autogrow until a few lines and then make it scroll for further added lines.
+Let's add an event listener to listen for input events in the textarea element and change the textarea size accordingly.
+
+```
+const MAX_ROWS = 5;
+
+const grow = () => {
+  textareaElement.style.height = "auto";
+  textareaElement.style.height =  `${Math.min(textareaElement.scrollHeight, calculateMaxHeight())}px`;
+
+  if (textareaElement.scrollHeight > calculateMaxHeight()) {
+    textareaElement.style.overflowY = "scroll";
+  } else {
+    textareaElement.style.overflowY = "hidden";
+  }
+};
+
+const calculateMaxHeight = () => {
+  const lineHeight = parseFloat(getComputedStyle(textareaElement).lineHeight);
+  const paddingY = parseFloat(getComputedStyle(textareaElement).paddingTop) + parseFloat(getComputedStyle(textareaElement).paddingBottom);
+
+  return lineHeight * MAX_ROWS + paddingY;
+}
+
+const textareaElement = document.getElementById("fieldToGrow");
+
+textareaElement.addEventListener("input", grow);
+```
+
+In this case, we are allowing the textarea to grow up to 5 lines. The content will be scrollable after that.
+
+![Textarea that grows](/static/images/growing-textarea.gif)
